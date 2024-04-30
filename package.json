@@ -9,6 +9,9 @@
   },
   "author": "Vadim Hmys",
   "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
