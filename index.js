@@ -28,11 +28,12 @@ client.query('SELECT table_schema,table_name FROM information_schema.tables;', (
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use('/', (req, res) => {
-  res.send("Hello, world!");
-});
 
 app.use('/api', router);
+
+app.use('*', (req, res) => {
+  res.send("Hello, world!");
+});
 
 app.use(ErrorHandler);
 
