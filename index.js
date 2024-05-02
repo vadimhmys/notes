@@ -1,6 +1,6 @@
 import express from 'express';
 import config from 'dotenv/config';
-import sequelize from './sequelize.js';
+import sequelize from './db.js';
 import * as mapping from './models/mapping.js';
 import cors from 'cors';
 import router from './routes/index.js';

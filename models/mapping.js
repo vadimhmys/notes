@@ -1,4 +1,4 @@
-import sequelize from '../sequelize.js';
+import sequelize from '../db.js';
 import database from 'sequelize';
 
 const { DataTypes } = database;
@@ -18,7 +18,4 @@ const Book = sequelize.define('book', {
 Author.hasMany(Book, { as: 'books', onDelete: 'CASCADE' });
 Book.belongsTo(Author);
 
-export {
-  Author,
-  Book
-}
+export { Author, Book };
