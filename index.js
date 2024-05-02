@@ -6,7 +6,7 @@ import cors from 'cors';
 import router from './routes/index.js';
 import ErrorHandler from './middleware/ErrorHandler.js';
 
-const PORT = process.env.DB_PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
