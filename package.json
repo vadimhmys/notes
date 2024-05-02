@@ -11,7 +11,8 @@
   "author": "Vadim Hmys",
   "license": "ISC",
   "engines": {
-    "node": "20.x"
+    "node": "20.x",
+    "npm": "10.7.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
