@@ -6,11 +6,11 @@ import cors from 'cors';
 import router from './routes/index.js';
 import ErrorHandler from './middleware/ErrorHandler.js';
 //import { Client } from 'pg';
-import pkg from 'pg';
-const { Client } = pkg;
+/* import pkg from 'pg';
+const { Client } = pkg; */
 
 const PORT = process.env.PORT || 5000;
-
+/* 
 const client = new Client({
   connectionString: process.env.DATABASE_URL
 });
@@ -23,7 +23,7 @@ client.query('SELECT table_schema,table_name FROM information_schema.tables;', (
     console.log(JSON.stringify(row));
   }
   client.end();
-});
+}); */
 
 const app = express();
 app.use(cors());
