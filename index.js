@@ -5,7 +5,8 @@ import * as mapping from './models/mapping.js';
 import cors from 'cors';
 import router from './routes/index.js';
 import ErrorHandler from './middleware/ErrorHandler.js';
-import { Client } from 'pg';
+//import { Client } from 'pg';
+const { Client } = require('pg');
 
 const PORT = process.env.PORT || 5000;
 
