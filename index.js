@@ -1,6 +1,6 @@
 import express from 'express';
 import config from 'dotenv/config';
-import sequelize from './db.js';
+import sequelize from './sequelize.js';
 import * as mapping from './models/mapping.js';
 import cors from 'cors';
 import router from './routes/index.js';
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/api', router);
 
 app.use('*', (req, res) => {
-  res.send("Hello, world!");
+  res.send('Hello, world!');
 });
 
 app.use(ErrorHandler);
